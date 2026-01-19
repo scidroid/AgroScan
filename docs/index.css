@@ -339,32 +339,26 @@ main::before {
 }
 
 .github-link {
-  position: fixed;
-  top: max(env(safe-area-inset-top), 16px);
-  left: max(env(safe-area-inset-left), 16px);
-  background: var(--color-white);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  color: var(--color-text);
+  gap: 6px;
+  color: var(--color-text-light);
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
   transition: all 0.3s ease;
-  z-index: 1000;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin: 8px 0;
 }
 
 .github-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   color: var(--color-primary);
+  background: rgba(76, 175, 80, 0.1);
 }
 
 .github-link svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 @keyframes pulse {
