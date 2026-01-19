@@ -338,6 +338,35 @@ main::before {
   color: #dc3545;
 }
 
+.github-link {
+  position: fixed;
+  top: max(env(safe-area-inset-top), 16px);
+  left: max(env(safe-area-inset-left), 16px);
+  background: var(--color-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.github-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: var(--color-primary);
+}
+
+.github-link svg {
+  width: 24px;
+  height: 24px;
+}
+
 @keyframes pulse {
   0% { opacity: 1; }
   50% { opacity: 0.5; }
